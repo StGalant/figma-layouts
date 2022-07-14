@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 import Navbar from './Navbar.vue'
 import Profile from './Profile.vue'
+import Features from './Features.vue'
+import Partners from './Partners.vue'
+import Service from './Service.vue'
+import Subscribe from './Subscribe.vue'
+import Footer from './Footer.vue'
 import bgUrl from '~/assets/project-1/bg.png'
 </script>
 
@@ -17,6 +22,11 @@ import bgUrl from '~/assets/project-1/bg.png'
       </div>
     </header>
     <Profile />
+    <Features />
+    <Partners />
+    <Service />
+    <Subscribe />
+    <Footer />
   </div>
 </template>
 
@@ -46,13 +56,16 @@ header {
   z-index: -100;
   background-size: cover;
   background-position: right;
+  filter: grayscale(20%);
+  opacity: .8;
 }
 .background::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -99;
-  background: radial-gradient(farthest-side at 0% 0%, hsla(0deg, 0%, 100%, 20%), hsla(0deg, 0%, 100%, 0%)) radial-gradient(farthest-side at 0% 0%, hsla(200deg, 35%, 90%, 100%), hsla(200deg, 35%, 90%, 0%));
+  background: radial-gradient(farthest-side at 0% 0%, hsla(0deg, 0%, 100%, 20%), hsla(0deg, 0%, 100%, 0%)),
+   radial-gradient(farthest-side at 0% 0%, hsla(200deg, 35%, 90%, 100%), hsla(200deg, 35%, 90%, 0%));
 }
 
 .banner {
@@ -91,8 +104,12 @@ header {
   }
 
   .background {
-    top: -50px;
+    top: -180px;
     background-position: right;
+  }
+
+  header {
+    height: 400px;
   }
 }
 </style>

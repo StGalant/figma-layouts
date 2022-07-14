@@ -1,5 +1,6 @@
 <script setup>
 import officeUrl from '~/assets/project-1/office.png'
+import bgBlobUrl from '~/assets/project-1/bg-blob.svg'
 </script>
 
 <template>
@@ -9,9 +10,11 @@ import officeUrl from '~/assets/project-1/office.png'
       <h4>short introduction</h4>
     </div>
     <div class="image" :style="{ backgroundImage: `url(${officeUrl})` }" />
-    <p class="details">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <div class="details" :style="{ backgroundImage: `url(${bgBlobUrl})` }">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
   </section>
 </template>
 
@@ -40,6 +43,14 @@ section {
   max-width: 647px;
   grid-area: dt;
   justify-self: left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: var(--clr-secondary);
 }
 
 .image {
@@ -75,6 +86,11 @@ section {
 @media (max-width: 640px) {
   .image {
     width: min(566px, 100%);
+  }
+
+  section {
+    margin-top: 0;
+    height: 707px;
   }
 }
 </style>
