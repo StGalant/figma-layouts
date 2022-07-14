@@ -6,17 +6,18 @@
   --clr-accent-shadow: hsla(22deg, 100%, 65%, 40%);
   --clr-accent-contrast: #FFFFFF;
   --clr-text: #252B42;
+  --clr-text-200: hsl(228deg, 28%, 80%);
   --clr-text-secondary: #4D4D4D;
   --clr-background: #FFFFFF;
   --clr-background-700: #F2F2F2;
-  --ff-root: "Roboto", sans-serif;
+  --ff-base: "Roboto", sans-serif;
   --ff-btn: "Roboto", sans-serif;
   --fs-btn: 14px;
   --fw-btn: regular;
   --fs-h1: 3.625rem;
   --fs-h2: 2.5rem;
   --fs-h4: 1.25rem;
-  color: var(--clr-text);
+  --fs-small: .75rem;
 }
 
 .theme-secondary {
@@ -25,12 +26,13 @@
 
 .theme-footer {
   --clr-text: #FFFFFF;
-  --clr-background: #252B42;
+  --clr-background: hsl(20deg,4%,13%);
 }
 
 :deep(.btn) {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   font-family: var(--ff-btn);
   font-size: var(--fs-btn);
   font-weight: var(--fw-btn);
@@ -65,4 +67,8 @@
 
 :deep(p) {
   line-height: 24px;
+}
+
+:deep(*) {
+  color: var(--clr-text);
 }

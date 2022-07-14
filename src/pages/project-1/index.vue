@@ -19,7 +19,7 @@ import bgUrl from '~/assets/project-1/bg.png'
         <h1>Your strategy is only as good as you execute it</h1>
         <RouterLink to="/">
           <Button :arrow="true">
-            <span>Get Started</span>
+            Get Started
           </Button>
         </RouterLink>
       </div>

@@ -31,11 +31,11 @@ import url99Designs from '~/assets/project-1/99designs.svg'
 
 <style scoped>
 .partners {
-  height: 755px;
   background-color: var(--clr-background-700);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 177px;
 }
 
 .heading {
@@ -56,6 +56,9 @@ import url99Designs from '~/assets/project-1/99designs.svg'
 }
 
 @media (max-width: 640px) {
+  .partners {
+    padding-bottom: 145px;
+  }
   .logos {
     gap: 40px 0px;
   }

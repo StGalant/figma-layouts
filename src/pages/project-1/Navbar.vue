@@ -7,7 +7,12 @@ import Button from './Button.vue'
   <div class="navbar">
     <Logo class="logo" />
     <nav>
-      <div class="hamburger" />
+      <div class="hamburger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.4994 2.56641H1.49944C1.38158 2.56641 1.28516 2.66283 1.28516 2.78069V4.49498C1.28516 4.61284 1.38158 4.70926 1.49944 4.70926H22.4994C22.6173 4.70926 22.7137 4.61284 22.7137 4.49498V2.78069C22.7137 2.66283 22.6173 2.56641 22.4994 2.56641ZM22.4994 19.2807H1.49944C1.38158 19.2807 1.28516 19.3771 1.28516 19.495V21.2093C1.28516 21.3271 1.38158 21.4236 1.49944 21.4236H22.4994C22.6173 21.4236 22.7137 21.3271 22.7137 21.2093V19.495C22.7137 19.3771 22.6173 19.2807 22.4994 19.2807ZM22.4994 10.9236H1.49944C1.38158 10.9236 1.28516 11.02 1.28516 11.1378V12.8521C1.28516 12.97 1.38158 13.0664 1.49944 13.0664H22.4994C22.6173 13.0664 22.7137 12.97 22.7137 12.8521V11.1378C22.7137 11.02 22.6173 10.9236 22.4994 10.9236Z" fill="#F79901" />
+        </svg>
+      </div>
+
       <div class="main-menu">
         <RouterLink :to="{ name: 'Project-1' }">
           Home
@@ -19,7 +24,7 @@ import Button from './Button.vue'
     </nav>
     <RouterLink to="/" class="get-started">
       <Button :arrow="true">
-        <span>Get Started</span>
+        Get Started
       </Button>
     </RouterLink>
   </div>
@@ -51,14 +56,7 @@ nav {
   width: 24px;
   margin: 0 20px;
   display: none;
-  background: linear-gradient(
-      to bottom,
-      var(--clr-accent-500), var(--clr-accent-500) 20%,
-      transparent 20%, transparent 40%,
-      var(--clr-accent-500) 40%, var(--clr-accent-500) 60%,
-      transparent 60%, transparent 80%,
-      var(--clr-accent-500) 80%, var(--clr-accent-500) 100%
-    );
+  cursor: pointer;
 }
 
 .get-started {
