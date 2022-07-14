@@ -62,5 +62,11 @@ import url99Designs from '~/assets/project-1/99designs.svg'
   .logos {
     gap: 40px 0px;
   }
+
+  .heading {
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+  }
 }
 </style>
