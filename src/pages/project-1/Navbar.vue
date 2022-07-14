@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import Logo from './Logo.vue'
+import Button from './Button.vue'
 </script>
 
 <template>
@@ -16,8 +17,10 @@ import Logo from './Logo.vue'
         </RouterLink>
       </div>
     </nav>
-    <RouterLink to="/" class="btn get-started">
-      <span>Get Started</span><div class="btn-arrow-right" />
+    <RouterLink to="/" class="get-started">
+      <Button :arrow="true">
+        <span>Get Started</span>
+      </Button>
     </RouterLink>
   </div>
 </template>

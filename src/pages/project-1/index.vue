@@ -6,6 +6,7 @@ import Partners from './Partners.vue'
 import Service from './Service.vue'
 import Subscribe from './Subscribe.vue'
 import Footer from './Footer.vue'
+import Button from './Button.vue'
 import bgUrl from '~/assets/project-1/bg.png'
 </script>
 
@@ -16,8 +17,10 @@ import bgUrl from '~/assets/project-1/bg.png'
       <Navbar />
       <div class="banner">
         <h1>Your strategy is only as good as you execute it</h1>
-        <RouterLink to="/" class="btn">
-          <span>Get Started</span><div class="btn-arrow-right" />
+        <RouterLink to="/">
+          <Button :arrow="true">
+            <span>Get Started</span>
+          </Button>
         </RouterLink>
       </div>
     </header>

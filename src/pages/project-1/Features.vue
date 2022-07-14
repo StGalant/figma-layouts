@@ -84,6 +84,7 @@
   border-radius: 5px;
   display: grid;
   place-items: center;
+  box-shadow: 0 30px 40px 0 var(--clr-accent-shadow);
 }
 
 .card p {
